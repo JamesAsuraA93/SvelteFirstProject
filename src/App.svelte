@@ -13,7 +13,7 @@
   <div class="MainPage">
     <nav>
       <Button path={"/"} name={"Home"} />
-      {#if $storeID[0].login}
+      {#if $storeID.login}
         <Button path={"atm"} name={"ATM"} />
         <Button path={"todolist"} name={"ToDoList"} />
         <Button path={"money"} name={"MoneyList"} />
@@ -24,9 +24,11 @@
       {/if}
     </nav>
     <main>
-      {#if !$storeID[0].login}
+      {#if !$storeID.login}
         <Route>
           <Home />
+          <!-- <ToDoList /> -->
+          <!-- <Money /> -->
         </Route>
         <Route path="atm">
           <Home />

@@ -3,7 +3,7 @@
 </script>
 
 <main>
-  <h1>Welcome {$storeID[0].id} to Our Service</h1>
+  <h1>Welcome {$storeID.id} to Our Service</h1>
   <p>You can choose our service whatever you want</p>
 </main>
 

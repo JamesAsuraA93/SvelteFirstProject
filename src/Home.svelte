@@ -1,12 +1,19 @@
 <script>
-  import { storeID } from "./stores.js";
+  import { storeID, storeBalance, storeMoneyList } from "./stores.js";
 
   let ID = "";
   let Password = "";
+  // let
   function HandleLogin() {
-    $storeID[0].id = ID;
-    $storeID[0].atmPass = Password;
-    $storeID[0].login = true;
+    $storeID.id = ID;
+    $storeID.atmPass = Password;
+    $storeID.login = true;
+    for (let i = 0; i < $storeBalance.length; i++) {
+      if ($storeID.id == $storeBalance[i].name) {
+        $storeMoneyList[0].balance = $storeBalance[i].nowbalance;
+        break;
+      }
+    }
   }
 </script>
 

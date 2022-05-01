@@ -1,34 +1,46 @@
 import { writable } from "svelte/store";
 
-export const storeID = writable([
-  {
-    id: "",
-    atmPass: "",
-    login: false,
-  },
-]);
+export const storeID = writable({
+  id: "",
+  atmPass: "",
+  login: false,
+});
 
 export const pinATM = writable("");
 
 export const storeBalance = writable([
   {
     ind: 1,
-    id: "James",
+    name: "James",
     pass: "3145",
-    balance: 3000,
+    nowbalance: 3000,
+    bank: 90000,
   },
   {
     ind: 2,
-    id: "KK",
+    name: "KK",
     pass: "1234",
-    balance: 999999,
+    nowbalance: 999999,
+    bank: 1,
   },
   {
     ind: 3,
-    id: "Mick",
+    name: "Mick",
     pass: "1111",
-    balance: 2000,
+    nowbalance: 2000,
+    bank: 300,
   },
 ]);
 
-export const storeToDoList = writable(["คิคิ"]);
+export const storeToDoList = writable([
+  { text: "เริ่มต้น todolist เลย", done: false },
+]);
+
+export const storeMoneyList = writable([
+  {
+    income: 0,
+    outcome: 0,
+    balance: 0,
+    deposite: 0,
+  },
+]);
