@@ -28,6 +28,18 @@
         <Route>
           <Home />
         </Route>
+        <Route path="atm">
+          <Home />
+        </Route>
+        <Route path="todolist">
+          <Home />
+        </Route>
+        <Route path="money">
+          <Home />
+        </Route>
+        <Route path="404">
+          <Home />
+        </Route>
       {:else}
         <Route>
           <Welcome />

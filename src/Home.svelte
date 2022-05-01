@@ -5,6 +5,7 @@
   let Password = "";
   function HandleLogin() {
     $storeID[0].id = ID;
+    $storeID[0].atmPass = Password;
     $storeID[0].login = true;
   }
 </script>
